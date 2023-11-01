@@ -6,7 +6,7 @@ metadata:
   name: rollout-bluegreen
 spec:
   replicas: 2
-  revisionHistoryLimit: 2
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: rollout-bluegreen
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: nginx:1.15
+          image: monopole/hello:1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
