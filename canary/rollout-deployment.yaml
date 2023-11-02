@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: nginx:1.16
+          image: nginx:latest
           ports:
             - name: http
               containerPort: 8080
