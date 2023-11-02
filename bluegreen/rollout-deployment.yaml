@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: nginx:1.16
+          image: nginx:1.15
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
